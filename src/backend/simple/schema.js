@@ -2,12 +2,12 @@ import { buildSchema } from 'graphql';
 
 const Schema = buildSchema(`
     type Query {
-        user(id: ID): User
+        user(id: Int): User
         users: [User]
     }
 
     type User {
-        id: ID
+        id: Int
         name: String
         age: Int
         job: String

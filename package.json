@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "simple": "gulp simple && cd ./dist/backend/simple && node index.js",
+    "typesresolvers": "gulp typesresolvers && cd ./dist/backend/typesresolvers && node index.js",
     "withmongo": "gulp withmongo && cd ./dist/backend/withmongo && node index.js",
     "frontend": "ENV=develop webpack-dev-server --mode development",
     "db": "mongod --dbpath=db"
