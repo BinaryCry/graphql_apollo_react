@@ -1,0 +1,1 @@
+export const convertIDtoString = (arg) => ({...arg, id: arg._id.toString()});

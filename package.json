@@ -1,0 +1,69 @@
+{
+  "name": "graphql_apollo",
+  "version": "1.0.0",
+  "description": "presentation about GraphQL",
+  "main": "package.json",
+  "scripts": {
+    "test": "jest",
+    "simple": "gulp simple && cd ./dist/backend/simple && node index.js",
+    "withmongo": "gulp withmongo && cd ./dist/backend/withmongo && node index.js",
+    "frontend": "ENV=develop webpack-dev-server --mode development",
+    "db": "mongod --dbpath=db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "{}"
+  },
+  "keywords": [
+    "graphql",
+    "apollo",
+    "react",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "gulp-babel": "^7.0.1",
+    "html-webpack-plugin": "^3.0.6",
+    "jest": "^22.4.2",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.1",
+    "precss": "^3.1.2",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "ajv-keywords": "^3.1.0",
+    "apollo-client-preset": "^1.0.8",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "file-loader": "^1.1.11",
+    "graphql": "^0.13.2",
+    "graphql-server-express": "^1.3.2",
+    "graphql-tag": "^2.8.0",
+    "graphql-tools": "^2.23.1",
+    "gulp": "^3.9.1",
+    "material-ui": "^0.20.0",
+    "mongodb": "^2.2.35",
+    "react": "^16.2.0",
+    "react-apollo": "^2.0.4",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
+  }
+}

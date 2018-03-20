@@ -1,0 +1,72 @@
+:root {
+  --graphColor: #cf3194;
+}
+
+.prWrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.prMiddle {
+  display: flex;
+  justify-content: center;
+}
+
+.prLogos {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  width: 100vw;
+}
+
+.prImgLogo {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px 0 26px;
+
+  &:first-child,
+  &:last-child {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.logoSoftServe {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 85px;
+  height: 85px;
+}
+
+.prAgenda {
+  font-size: 1.75em;
+  margin-top: 24px;
+
+  & a {
+    text-decoration: none;
+    color: #6c6290;
+
+    &:visited {
+      color: #6c6290;
+    }
+  }
+}
+
+.prHeader {
+  font-weight: 800;
+}
+
+.prAgendaList {
+  margin-top: 16px;
+
+  & li {
+    padding: .5em 0;
+    font-size: .875em;
+  }
+}

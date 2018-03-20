@@ -1,0 +1,20 @@
+%contentWrapper {
+  margin: .65em 0;
+}
+
+.postsWrapper {
+  width: 45vw;
+  margin: 5vh auto;
+  border: 1px solid #e2e2e2;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.postHeader {
+  font-weight: 800;
+}
+
+.postContent {
+  font-weight: 300;
+  @extend %contentWrapper;
+}
