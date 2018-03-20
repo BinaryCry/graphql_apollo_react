@@ -5,13 +5,6 @@ import cors from 'cors';
 
 const PORT = 5002;
 
-const createUser = (id, name, age, job) => ({
-    id,
-    name,
-    age,
-    job
-});
-
 const findUserById = (userlist, id) => userlist.find(user => user.id == id);
 
 const Users = [
@@ -19,27 +12,25 @@ const Users = [
         id: 1,
         name: 'John',
         age: '25',
-        job: 'Manager',
-        collegues: [2]
+        job: 'Manager'
     },
     {
         id: 2,
         name: 'Mikael',
         age: '37',
-        job: 'CEO',
-        collegues: [1, 3]
+        job: 'CEO'
     },
     {
         id: 3,
-        name: 'Lucy',
+        name: 'Lucy L',
         age: '21',
-        job: 'Secretary',
-        collegues: [2]
+        job: 'Secretary'
     }
 ];
 
 const root = {
-    user: (query) => findUserById(Users, query.id)
+    user: (query) => findUserById(Users, query.id),
+    users: () => Users
 };
 
 const app = express();
