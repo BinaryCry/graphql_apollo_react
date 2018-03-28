@@ -33,7 +33,7 @@ module.exports = {
         new htmlWebpackPlugin({
             template: 'src/frontend/template.ejs',
             charset: 'UTF-8',
-            title: 'Test task',
+            title: 'Presentation GraphQL',
             appSelector: 'root'
         }),
         new webpack.DefinePlugin({
